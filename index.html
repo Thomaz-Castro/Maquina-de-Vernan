@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vernan Machine</title>
+    <link rel="icon" href="icone.jpg" type="image/x-icon">
+    <script src="script2.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">CRIPTOGRAFAR</h1>
+        <div class="input">
+            <input type="text" id="inputText" placeholder="Insira o texto">
+            <button onclick="cipher()">CYPHER</button>
+        </div>
+
+        <div class="centerr">
+            <div id="output">
+                <div id="plainText" class="table-container"><I style="text-align: center;"><U>DATASET TEXTO</U></I>
+                </div>
+                <p class="operation">XOR</p>
+                <div id="key" class="table-container"><I style="text-align: center;"><U>DATASET CHAVE</U></I></div>
+                <p class="operation">=</p>
+                <div id="cipherText" class="table-container"><I><U>DATASET CIPHER</U></I></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align: center;">DESCRIPTOGRAFAR</h1>
+        <div class="input2">
+            <div>
+                <input type="text" id="inputText2" placeholder="Insira os bytes criptografados">
+                <input type="text" id="inputText3" placeholder="Insira a chave de criptografia"
+                    style="margin-top: 10px;">
+            </div>
+            <button onclick="descryp()" style="margin-top: 15px;">DESCRIPTOGRAFAR</button>
+        </div>
+
+        <div class="centerr">
+            <div id="output">
+
+                <div id="txtORG" class="table-container"><I><U>DATASET TEXTO</U></I></div>
+                <p class="operation">XOR</p>
+                <div id="chave" class="table-container"><I><U>DATASET CHAVE</U></I></div>
+                <p class="operation">=</p>
+                <div id="descriptografado" class="table-container"><I><U>DATASET CIPHER</U></I></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align: center;">ASCII</h1>
+        <div class="input3">
+            <input type="text" id="inputText4" placeholder="Insira os bytes para converte-los">
+            <button onclick="desbin()">DESBINARIZAR</button>
+        </div>
+
+        <div id="desbinado" style="text-align: center;">
+            <p>BINÁRIO -> CARACTER</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<footer style="background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center; margin-top: 110px;">
+    <p>2°i da UNIVAP - Centro <br> Copyright &copy; 2024</p>
+</footer>
+
+</html>
